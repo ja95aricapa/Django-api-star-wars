@@ -46,7 +46,7 @@ class Planets(models.Model):
 class Films(models.Model):
     title = models.CharField(max_length=50)
     episode_id = models.IntegerField()
-    opening_crawl = models.CharField(max_length=50)
+    opening_crawl = models.TextField()
     director = models.CharField(max_length=50)
     producer = models.CharField(max_length=50)
     release_date = models.DateField()

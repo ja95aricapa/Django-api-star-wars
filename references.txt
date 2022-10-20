@@ -1,0 +1,10 @@
+API star wars:
+* https://swapi.dev/documentation
+
+Turorial documentación Swagger
+* https://www.youtube.com/watch?v=lZ_mIYSw_Vc
+* https://drf-yasg.readthedocs.io/en/stable/
+* https://stackoverflow.com/questions/28203070/how-to-show-query-parameter-options-in-django-rest-framework-swagger
+
+Turorial Django REST Framework
+* https://www.youtube.com/watch?v=GE0Q8YNKNgs

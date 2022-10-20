@@ -1,6 +1,8 @@
 from .models import Planets, Films, People
 from rest_framework import viewsets, permissions
 from .serializers import PeopleSerializer, PlanetsSerializer, FilmsSerializer
+from .filters import NameFilterBackend
+
 
 class PeopleViewSet(viewsets.ModelViewSet):
     queryset = People.objects.all()
@@ -8,13 +10,7 @@ class PeopleViewSet(viewsets.ModelViewSet):
         permissions.AllowAny
     ]
     serializer_class = PeopleSerializer
-
-    def get_queryset(self):
-        queryset = People.objects.all()
-        name = self.request.query_params.get('name', None)
-        if name is not None:
-            queryset = queryset.filter(name=name)
-        return queryset
+    filter_backends = (NameFilterBackend,)
 
 
 class PlanetsViewSet(viewsets.ModelViewSet):
