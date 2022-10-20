@@ -1,10 +1,19 @@
 API star wars:
 * https://swapi.dev/documentation
 
-Turorial documentación Swagger
+Turorial documentación Swagger:
 * https://www.youtube.com/watch?v=lZ_mIYSw_Vc
 * https://drf-yasg.readthedocs.io/en/stable/
 * https://stackoverflow.com/questions/28203070/how-to-show-query-parameter-options-in-django-rest-framework-swagger
 
-Turorial Django REST Framework
+Turorial Django REST Framework:
 * https://www.youtube.com/watch?v=GE0Q8YNKNgs
+
+Turorial Postman:
+* https://www.youtube.com/watch?v=mVTsK6ZdY6c
+
+Tutorial auth:
+* https://simpleisbetterthancomplex.com/tutorial/2018/11/22/how-to-implement-token-authentication-using-django-rest-framework.html
+* https://www.django-rest-framework.org/api-guide/authentication/
+* https://www.geeksforgeeks.org/implement-token-authentication-using-django-rest-framework/
+* https://www.youtube.com/watch?v=wN-88aIx8SM

@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from .models import Planets, Films, People
 
-
 class PeopleSerializer(serializers.ModelSerializer):
     class Meta:
         model = People

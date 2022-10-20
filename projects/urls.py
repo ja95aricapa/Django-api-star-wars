@@ -1,14 +1,14 @@
 from rest_framework import routers
+from django.urls import path
 from .api import PeopleViewSet, PlanetsViewSet, FilmsViewSet
+from .views import login
 
 router = routers.DefaultRouter()
 
-router.register('api/people', PeopleViewSet, 'people')
-
-#router.register(r'api/people', PeopleViewSet, 'people_search')
-
-router.register('api/planets', PlanetsViewSet, 'planets')
-
-router.register('api/films', FilmsViewSet, 'films')
+router.register(prefix='people', viewset=PeopleViewSet, basename='people')
+router.register(prefix='planets', viewset=PlanetsViewSet, basename='planets')
+router.register(prefix='films', viewset=FilmsViewSet, basename='films')
 
 urlpatterns = router.urls
+
+urlpatterns += path('login/', login, name='login'),
