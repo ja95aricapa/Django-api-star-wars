@@ -1,0 +1,8 @@
+version: '3'
+services:
+  core_api:
+      build: .
+      image: api-star-wars:latest
+      container_name: api-star-wars-container
+      ports:
+          - "8000:8000"

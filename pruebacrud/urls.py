@@ -40,7 +40,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # API Paths
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
-    path('api/', include('projects.urls')),
+    path('', include('projects.urls')),
     # Docs Paths
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
