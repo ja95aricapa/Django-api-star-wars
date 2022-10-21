@@ -7,6 +7,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 import status
 
+
 @api_view(['POST'])
 def login(request):
     username = request.POST.get('username')
