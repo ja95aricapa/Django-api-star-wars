@@ -10,5 +10,3 @@ router.register(prefix='planets', viewset=PlanetsViewSet, basename='planets')
 router.register(prefix='films', viewset=FilmsViewSet, basename='films')
 
 urlpatterns = router.urls
-
-urlpatterns += path('login/', login, name='login'),
